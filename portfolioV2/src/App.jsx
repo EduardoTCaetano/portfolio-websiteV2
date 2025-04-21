@@ -2,6 +2,7 @@ import "./App.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
+import { Home } from "./components/sections/home";
 
 
 import { useState } from "react";
@@ -17,10 +18,11 @@ function App() {
       <div
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-gradient-to-br from-green-900 via-black to-gray-900 text-gray-100`}
+        } bg-gradient-to-br from-gray-700 via-black to-gray-900 text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />   
+        <Home /> 
       </div>
     </>
   );
