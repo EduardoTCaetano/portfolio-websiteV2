@@ -23,10 +23,8 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
-          {/* Lado esquerdo - Texto */}
           <div className="flex-1 flex flex-col gap-2 text-left md:text-center mt-8 sm:mt-16">
-            {/* Ajuste de margem para mover o texto mais para cima */}
-            <h4 className="font-mono text-xl text-gray-400 mt-0 sm:mt-0">
+            <h4 className="font-mono text-xl text-gray-400 mt-16 sm:mt-0">
               BEM-VINDO AO MEU MUNDO
             </h4>
             <h1 className="font-mono text-5xl md:text-6xl text-white">
@@ -51,7 +49,6 @@ export const Home = () => {
               experiências que realmente façam a diferença.
             </p>
 
-            {/* Botões */}
             <div className="flex space-x-4 mt-6 flex-wrap justify-center">
               <a
                 href="#projects"
@@ -68,7 +65,6 @@ export const Home = () => {
             </div>
           </div>
 
-          {/* Lado direito - Imagem com quadro redondo */}
           <div className="flex-1 flex justify-center md:justify-center">
             <div className="relative w-[300px] h-[300px] sm:w-[370px] sm:h-[370px] md:w-[500px] md:h-[500px] p-2 border-8 border-gray-700 rounded-full shadow-xl overflow-hidden">
               <img
