@@ -6,7 +6,7 @@ import animeImage from "../../../public/anime.jpg";
 export const Home = () => {
   const [text] = useTypewriter({
     words: [
-      "Desenvolvedor de Software.",
+      "Analista de Sistemas.",
       "Desenvolvedor Front-End.",
       "Desenvolvedor Back-End.",
     ],
@@ -34,11 +34,11 @@ export const Home = () => {
               </span>
             </h1>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              <span className="text-red-600">{text}</span>
+              <span className="text-blue-500">{text}</span>
               <Cursor
                 cursorBlinking={false}
                 cursorStyle="|"
-                cursorColor="#dc2626"
+                cursorColor="#3f82F6"
               />
             </h2>
             <p className="text-base font-bodyFont leading-6 tracking-wide text-gray-300">
